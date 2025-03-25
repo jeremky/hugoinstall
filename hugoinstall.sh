@@ -8,10 +8,13 @@ else
   arch=amd64
 fi
 
+# Choix de la version
+version=0.145.0
+
 # Téléchargement et installation
 mkdir -p ~/.local/bin
-curl -LO https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_linux-$arch.tar.gz
-tar -C ~/.local/bin -xzf hugo_extended_0.145.0_linux-$arch.tar.gz
-rm hugo_extended_0.145.0_linux-$arch.tar.gz
+curl -LO https://github.com/gohugoio/hugo/releases/download/v"$version"/hugo_extended_"$version"_linux-"$arch".tar.gz
+tar -C ~/.local/bin -xzf hugo_extended_"$version"_linux-"$arch".tar.gz
+rm hugo_extended_"$version"_linux-"$arch".tar.gz
 rm ~/.local/bin/LICENSE
 rm ~/.local/bin/README.md
