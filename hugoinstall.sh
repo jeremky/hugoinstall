@@ -9,7 +9,7 @@ else
 fi
 
 # Choix de la version
-version=0.145.0
+version=0.146.5
 
 # Téléchargement et installation
 mkdir -p ~/.local/bin
