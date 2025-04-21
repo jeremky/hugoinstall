@@ -8,8 +8,7 @@ else
   arch=amd64
 fi
 
-# Choix de la version
-version=0.146.6
+version=$(curl -s -L -o /dev/null -w '%{url_effective}' https://github.com/gohugoio/hugo/releases/latest | sed 's#.*/tag/v##')
 
 # Téléchargement et installation
 mkdir -p ~/.local/bin
