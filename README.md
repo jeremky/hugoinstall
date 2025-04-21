@@ -1,6 +1,6 @@
 # hugoinstall
 
-Ce script permet l'installation de Hugo dans sa dernière version sur un système Debian et dérivé. Il est compatible x64 et arm64.
+Ce script permet l'installation de [Hugo](https://gohugo.io/) dans sa dernière version sur un système Debian et dérivé. Il est compatible x64 et arm64.
 
 ## Installation
 
@@ -9,3 +9,5 @@ git clone https://github.com/jeremky/hugoinstall
 cd hugoinstall
 ./hugoinstall.sh
 ```
+
+Le binaire sera installé ici : `~/.local/bin/hugo`. Il vous sera nécessaire de redémarrer votre session afin qu'il soit chargé par la variable `PATH`.
