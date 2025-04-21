@@ -1,6 +1,6 @@
 # hugoinstall
 
-Ce script permet l'installation de Hugo en version 0.145 sur un système Debian et dérivé. Il est compatible x64 et arm64.
+Ce script permet l'installation de Hugo en version 0.146.6 sur un système Debian et dérivé. Il est compatible x64 et arm64.
 
 ## Installation
 
