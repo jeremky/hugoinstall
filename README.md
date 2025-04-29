@@ -11,3 +11,19 @@ cd hugoinstall
 ```
 
 Le binaire sera installé ici : `~/.local/bin/hugo`. Il vous sera nécessaire de redémarrer votre session afin qu'il soit chargé par la variable `PATH`.
+
+## Vérification
+
+Pour vérifier la bonne installation, exécutez la commande suivante : 
+
+```bash
+hugo version
+```
+
+## Désinstallation
+
+Si vous souhaitez supprimer Hugo, il suffit de supprimer le binaire :
+
+```bash
+rm -f ~/.local/bin/hugo
+```
