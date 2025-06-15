@@ -12,6 +12,4 @@ version=$(curl -s -L -o /dev/null -w '%{url_effective}' https://github.com/gohug
 mkdir -p ~/.local/bin
 curl -LO https://github.com/gohugoio/hugo/releases/download/v"$version"/hugo_extended_"$version"_linux-"$arch".tar.gz
 tar -C ~/.local/bin -xzf hugo_extended_"$version"_linux-"$arch".tar.gz
-rm hugo_extended_"$version"_linux-"$arch".tar.gz
-rm ~/.local/bin/LICENSE
-rm ~/.local/bin/README.md
+rm hugo_extended_"$version"_linux-"$arch".tar.gz ~/.local/bin/LICENSE ~/.local/bin/README.md
