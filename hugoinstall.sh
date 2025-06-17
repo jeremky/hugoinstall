@@ -11,6 +11,11 @@ fi
 version=$(curl -s -L -o /dev/null -w '%{url_effective}' https://github.com/gohugoio/hugo/releases/latest | sed 's#.*/tag/v##')
 mkdir -p ~/.local/bin
 curl -LOs https://github.com/gohugoio/hugo/releases/download/v"$version"/hugo_extended_"$version"_linux-"$arch".tar.gz
-tar -C ~/.local/bin -xzf hugo_extended_"$version"_linux-"$arch".tar.gz
-rm hugo_extended_"$version"_linux-"$arch".tar.gz ~/.local/bin/LICENSE ~/.local/bin/README.md
-echo "Installation de hugo effectuée"
+if [[ -f hugo_extended_"$version"_linux-"$arch".tar.gz ]]; then
+  tar -C ~/.local/bin -xzf hugo_extended_"$version"_linux-"$arch".tar.gz
+  rm hugo_extended_"$version"_linux-"$arch".tar.gz ~/.local/bin/LICENSE ~/.local/bin/README.md
+  echo "Installation de hugo effectuée"
+else
+  echo "Problème de téléchargement de Hugo"
+  exit 1
+fi
