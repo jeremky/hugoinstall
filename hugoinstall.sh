@@ -36,7 +36,8 @@ if [[ -f ~/.local/bin/hugo ]]; then
     warning "Hugo est déjà installé dans sa dernière version : v$locver"
     exit 0
   else
-    read -p "Nouvelle version disponible : v$version. Voulez-vous l'installer ? (o/n) : " reponse
+    warning "Nouvelle version disponible : v$version"
+    read -p "Voulez-vous l'installer ? (o/n) : " reponse
     case $reponse in
       o|oui)
         gethugo
