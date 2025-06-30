@@ -12,6 +12,8 @@ cd hugoinstall
 
 Le binaire sera installé ici : `~/.local/bin/hugo`. Il vous sera nécessaire de redémarrer votre session afin qu'il soit chargé par la variable `PATH`.
 
+Si le binaire est déjà installé, le script vérifiera la version et le mettra automatiquement à jour si nécessaire.
+
 ## Vérification
 
 Pour vérifier la bonne installation, exécutez la commande suivante : 
