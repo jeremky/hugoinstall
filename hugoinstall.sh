@@ -44,7 +44,6 @@ if [[ -f ~/.local/bin/hugo ]]; then
         ;;
       n|non)
         message "Installation annulée"
-        exit 0
         ;;
     esac
   fi
